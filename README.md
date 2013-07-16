@@ -6,7 +6,9 @@ in GUI using Python to Improve my coding.
 
 
 
-I will link to each project that I complete. Some will be in this same repo, some bigger ones will have dedicated repos.
+I will link to each project that I complete. Some will be in this same repo, some bigger ones will have dedicated 
+
+repos.
 Some Projects will not be Completed,You may Fork and develop upon my code.
 
 ==============================
