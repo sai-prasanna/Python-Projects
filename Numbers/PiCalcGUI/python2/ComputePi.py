@@ -1,3 +1,7 @@
+#!/usr/bin/python
+"""GUI application to generate Pi to specified decimal places"""
+
+
 from Tkinter import *
 from pi_lib import pi
 
@@ -24,13 +28,14 @@ class Pypi(Tk):
         b_compute.grid(column=2, row=0)
 
         l_pi = Label(self, anchor="w", text=u" Value of Pi")
-        l_pi.grid(column=0, row=1,  sticky='EW')
+        l_pi.grid(column=0, row=1, sticky='EW')
 
         self.t_answer = Text(self, width=8, height=1)
         self.t_answer.grid(column=1, row=1, sticky='EW')
         self.t_answer.insert('1.0', u"3.14159")
 
-        b_clip = Button(self, text=u"Copy to Clipboard", command=self.copy_clip)
+        b_clip = Button(
+            self, text=u"Copy to Clipboard", command=self.copy_clip)
         b_clip.grid(column=2, row=1)
 
         self.grid_columnconfigure(0, weight=1)
@@ -49,4 +54,3 @@ if __name__ == "__main__":
     app = Pypi(None)
     app.title('Find Pi')
     app.mainloop()
-      
